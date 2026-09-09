@@ -22,13 +22,6 @@ Production output is in `dist/`. No UI or animation libraries were added.
 
 AI is positioned as part of the engineering workflow, with engineering judgment, review and validation retained.
 
-## Before publishing
-
-1. Add the actual PDF at `public/Ritish-Kolan-Resume.pdf`. The visible Download Resume button already points to `/Ritish-Kolan-Resume.pdf`; it needs this file to work.
-2. Replace the GitHub placeholder in `src/App.jsx` with a link to your profile.
-3. Replace `https://example.com/` in both the canonical link and `og:url` in `index.html` with your production URL.
-4. Confirm the LinkedIn URL recovered from the original source, email, location and current-role details are still correct.
-
 ## Interaction checks
 
 Check widths 1440, 1024, 768, 390 and 360 pixels. Confirm no horizontal overflow; readable cards, workflow and experience; and usable navigation and contact links.
