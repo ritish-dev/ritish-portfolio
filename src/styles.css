@@ -627,6 +627,41 @@ h1 {
   gap:90px;
   align-items:start
 }
+/* The existing portrait is cropped only in layout; the source image stays intact. */
+.about-intro {
+  display:grid;
+  grid-template-columns:128px minmax(0,1fr);
+  gap:24px;
+  align-items:start
+}
+.about-portrait {
+  display:block;
+  width:128px;
+  height:160px;
+  object-fit:cover;
+  object-position:center 25%;
+  border-radius:10px
+}
+@media(min-width:801px) and (max-width:1100px) {
+  .about-intro {
+    grid-template-columns:96px minmax(0,1fr);
+    gap:20px
+  }
+  .about-portrait {
+    width:96px;
+    height:120px
+  }
+}
+@media(max-width:480px) {
+  .about-intro {
+    grid-template-columns:minmax(0,1fr);
+    gap:20px
+  }
+  .about-portrait {
+    width:112px;
+    height:140px
+  }
+}
 .about-copy p,.section-heading>p,.ai-heading>p {
   max-width:62ch
 }

@@ -92,7 +92,7 @@ export default function App(){
 
    <section className="section container" id="about">
     <div className="about-grid"><div><p className="eyebrow">HOW I WORK</p><h2>Architecture thinking. Product mindset. Hands-on delivery.</h2></div>
-    <div className="about-copy"><p>I work across discovery, technical design, rapid prototyping, implementation, deployment and production support—turning complex enterprise requirements into scalable software.</p><p>My foundation is web-platform engineering, strengthened by cloud-native architecture, API integration, stakeholder leadership and practical AI-assisted development.</p></div></div>
+    <div className="about-intro"><img className="about-portrait" src="/og-image.png" alt="Ritish Kolan" width={128} height={160} loading="lazy" decoding="async"/><div className="about-copy"><p>I work across discovery, technical design, rapid prototyping, implementation, deployment and production support—turning complex enterprise requirements into scalable software.</p><p>My foundation is web-platform engineering, strengthened by cloud-native architecture, API integration, stakeholder leadership and practical AI-assisted development.</p></div></div></div>
     <div className="capability-grid">
      <div className="capability"><Code2/><h3>Web Platform</h3><p>React, TypeScript, Redux, Angular, Storybook, reusable architecture and accessible UI.</p></div>
      <div className="capability"><Cloud/><h3>Cloud & APIs</h3><p>AWS serverless, Node.js, REST, GraphQL, Docker and Kubernetes.</p></div>
