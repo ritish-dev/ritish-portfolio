@@ -12,12 +12,17 @@ export type Project = {
   impact: string;
 };
 
+export type ClientHighlight = {
+  client: string;
+  description: string;
+};
+
 // Named tuples preserve the existing data layout and rendering order.
 export type Experience = readonly [
   period: string,
   role: string,
   company: string,
-  summary: string
+  summary: string | readonly ClientHighlight[]
 ];
 
 export type WorkflowStep = readonly [

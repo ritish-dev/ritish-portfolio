@@ -86,7 +86,7 @@ export default function App(){
    <section className="section section-dark" id="experience"><div className="container">
     <div className="section-heading light"><div><p className="eyebrow">EXPERIENCE</p><h2>From UI development to platform leadership.</h2></div></div>
     <div className="timeline">{experience.map(([period,role,company,summary], index)=><article className={`timeline-row ${index === 0 ? "current-role" : ""}`} key={company+role}>
-      <div className="timeline-period">{period}</div><div className="timeline-role"><h3>{role}</h3><p className="company">{company}</p></div><div className="timeline-content"><p>{summary}</p></div>
+      <div className="timeline-period">{period}</div><div className="timeline-role"><h3>{role}</h3><p className="company">{company}</p></div><div className="timeline-content">{typeof summary === "string" ? <p>{summary}</p> : <ul className="client-highlights">{summary.map(({client, description}) => <li className="client-highlight" key={client}><h4 className="client-name">{client}</h4><p>{description}</p></li>)}</ul>}</div>
     </article>)}</div>
    </div></section>
 

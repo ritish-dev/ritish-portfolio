@@ -42,7 +42,10 @@ export const projects: readonly Project[] = [
 
 export const experience: readonly Experience[] = [
   ["2021 — Present","Senior / Lead Technical Consultant","Blackboard, Inc.","Technical lead and architectural decision-maker for cloud-native learning capabilities, owning delivery from discovery through production support."],
-  ["2017 — 2021","Software Engineer","Browse Info Solutions","Modernized enterprise client applications including high-volume React experiences for Domino’s and responsive healthcare applications for OptimizeRx."],
+  ["2017 — 2021","Software Engineer","Browse Info Solutions",[
+    { client: "Domino’s Pizza", description: "Modernized legacy applications into React-based SPAs, building reusable components for customer ordering experiences integrated with location services and real-time data." },
+    { client: "OptimizeRx", description: "Built responsive healthcare applications with React, Redux, REST integrations and WebSockets, including dynamic forms and accessible interfaces." }
+  ]],
   ["2016 — 2017","UI Developer (Intern)","Perficient Inc.","Built responsive React/Redux/Node.js applications with REST APIs, authentication and reusable components."],
   ["2016 — 2017","Graduate Assistant","Eastern Michigan University","Developed accessibility-compliant student systems and user-centered web experiences."],
   ["2013 — 2014","UI Developer","Indicode Technologies","Built AngularJS applications, reusable components and REST integrations with Spring MVC backends."]
